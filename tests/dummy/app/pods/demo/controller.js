@@ -8,7 +8,7 @@ const {
 export default Controller.extend({
   notifier: inject.service(),
   dummyRecords: computed.alias('model'),
-  orientation: 'vertical',
+  activePod: null,
   podsVisibility: A(),
   detailActions: A([
     {
@@ -63,7 +63,9 @@ export default Controller.extend({
 
   actions: {
     // TODO Revert to the initial pod on a canvas click
-
+    closeThis () {
+      this.set('activePod', null)
+    },
     togglePods (pod) {
       let podsVisibility = this.get('podsVisibility')
       if (podsVisibility.findBy('id', pod) === undefined) {

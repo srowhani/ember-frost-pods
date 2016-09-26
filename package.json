@@ -21,6 +21,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
+    "ember-array-helper": "1.0.0",
     "ember-async-image": "0.1.1",
     "ember-block-slots": "1.1.1",
     "ember-browserify": "1.1.12",
@@ -72,7 +73,7 @@
     "ember-computed-decorators": "^0.2.2",
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-sass": "^5.2.0",
-    "liquid-fire": "^0.24.1"
+    "liquid-fire": "^0.26.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
