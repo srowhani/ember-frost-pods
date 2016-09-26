@@ -21,7 +21,6 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
-    "ember-array-helper": "1.0.0",
     "ember-async-image": "0.1.1",
     "ember-block-slots": "1.1.1",
     "ember-browserify": "1.1.12",
