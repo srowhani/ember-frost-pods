@@ -4,10 +4,12 @@
   <div class="dummy-content">
     <div class="frost-pods-demo">
       <div class="controls">
-        {{#frost-button class='medium secondary text' onClick=(action (mut activePod) 'map')}}Map pods{{/frost-button}}
-        {{#frost-button class='medium secondary text' onClick=(action (mut activePod) 'node')}}Node pods{{/frost-button}}
-        {{#frost-button class='medium secondary text' onClick=(action (mut activePod) 'search')}}Search pods{{/frost-button}}
-        {{#frost-button class='medium secondary text' onClick=(action (mut activePod) 'details')}}Detail pods{{/frost-button}}
+        {{#each items as |item|}}
+          {{frost-button class='medium secondary text'
+            onClick=(action (mut activePod) item)
+            text=(concat 'Toggle ' item)
+          }}
+        {{/each}}
       </div>
       {{frost-pods
         active=activePod
